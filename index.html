@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign in</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid ">
+            <a class="navbar-brand fs-1" href="./index.html">Authentication page</a>
+        </div>
+    </nav>
+
+    <div class="w-50  p-3 position-absolute top-50 start-50 translate-middle border border-info">
+        <form onsubmit="validate();return false" action="#">
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInputName" placeholder="UserName" />
+                <label for="floatingInputName">User name</label>
+                <p id="validateInput"></p>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com">
+                <label for="floatingInputEmail">Email address</label>
+                <p id="validateEmail"></p>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" onkeypress="passwordCheck()" id="floatingPassword"
+                    placeholder="Password">
+                <label for="floatingPassword">Password</label>
+                <p id="validatePassword"></p>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck">
+                <label class="form-check-label" for="exampleCheck"> Agree to terms and conditions</label>
+                <p id="validateConsent"> </p>
+            </div>
+            <input type="submit" value="Sign up" class="btn btn-primary" />
+        </form>
+    </div>
+    <script src="authentication.js" async defer></script>
+</body>
+
+</html>
