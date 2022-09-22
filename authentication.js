@@ -36,7 +36,7 @@ function validate() {
     document.getElementById("validateConsent").innerHTML = "";
     alert("Registered successfully!");
   } else {
-    alert("Registered failed!");
+    alert("Registration failed!");
   }
 }
 function passwordCheck() {
