@@ -34,9 +34,9 @@ function validate() {
     document.getElementById("validateEmail").innerHTML = "";
     document.getElementById("validatePassword").innerHTML = "";
     document.getElementById("validateConsent").innerHTML = "";
-    alert("Regeistered successfully!");
+    alert("Registered successfully!");
   } else {
-    alert("Regeistered failed!");
+    alert("Registered failed!");
   }
 }
 function passwordCheck() {
